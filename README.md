@@ -32,7 +32,7 @@ Ausgangspunkt ist folgende Methode:
         catch (UnsupportedCountryException e) {
             LOG.error("This country is not supported", e);
         }
-        
+
         try {
             Weather weather = retriever.retrieve(new City("Sydney", "Australia"));
             LOG.info(weather);
@@ -51,6 +51,9 @@ Methode kompatibel aufgerufen werden können. Du kannst hier wieder auf die Open
 Sorge dafür, dass nur bestimmte Länder unterstützt werden. Insbesondere soll für das Land
 "Australia" innerhalb der Methode `WeatherRetriever#retrieve()` eine `UnsupportedCountryException`
 geworfen werden.
+
+Füge deinen Klassen konformes Javadoc hinzu (NetBeans kann hier entsprechende Hilfen geben)
+und dokumentiere die Funktionen und das Verhalten deiner Klassen.
 
 ## Inkrement 3
 
